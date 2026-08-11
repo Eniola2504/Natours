@@ -3,6 +3,10 @@
   margin: 0 auto;
   @include clearfix;
 
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
   [class^="col-"] {
     float: left;
     &:not(:last-child) {
